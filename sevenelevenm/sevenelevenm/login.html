@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- user-scalable=no는 iOS에서 안되므로 사용하지않음 -->
+    <!-- minimum-scale=1.0 손으로 축소시 최소값이며 기본값이 0.25이므로 1로 지정 -->
+    <!-- maximum-scale은 지정하지않으면 스마트폰이 허용하는최대치까지 확대가능 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,minimum-scale=1.0">
+    <!-- iOS 전화번호 자동링크방지, 폰트컬러가 적용되지않으므로 -->
+    <meta name="format-detection" content="telephone=no">
+    <meta name="description" content="가깝고 편리한 행복충전소, 세계 1등 편의점 세븐일레븐">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="seveneleven 세븐일레븐">
+    <meta property="og:url" content="http://hominin.dothome.co.kr/sevenelevenm">
+    <meta property="og:image" content="http://hominin.dothome.co.kr/seveneleven/images/favicon_7eleven.png">
+    <meta property="og:description" content="가깝고 편리한 행복충전소, 세계 1등 편의점 세븐일레븐">
+    <title>세븐일레븐</title>
+    <!-- 안드로이드 크롬은 파비콘을 홈화면아이콘으로 사용
+    iOS 사파리는 터치아이콘 사용 -->
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="apple-touch-icon" href="images/subway_og.png">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/jquery-ui.min.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/common.css?v=<?php echo time(); ?>">
+    <link rel="stylesheet" href="css/layout.css?v=<?php echo time(); ?>">
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script src="js/ui_common.js?v=<?php echo time(); ?>"></script>
+  </head>
+<body>
+  <div id="skip_navi">
+    <a href="#container">본문바로가기</a>
+  </div>
+  <div id="wrap">
+    <header id="header">
+      <button class="btn_open" type="button">버튼
+      </button>
+      <aside class="gnb_area">
+        <div class="gnb_logo"><img src="images/logo.png" alt="로고"><a class="btn_close" href="#">닫기</a></div>
+      <nav class="gnb_wrap">
+        <ul class="gnb">
+          <li>
+            <a href="#">이벤트</a>
+            <ul class="depth02">
+              <li><a href="event.html">진행중인 이벤트</a></li>
+              <li><a href="event.html">완료된 이벤트</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">기업소개</a>
+            <ul class="depth02">
+              <li><a href="#">회사소개</a></li>
+              <li><a href="#">CEO의 말</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">상품소개</a>
+            <ul class="depth02">
+              <li><a href="product.html">인기상품</a></li>
+              <li><a href="product.html">신상품</a></li>
+              <li><a href="product.html">할인상품</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">창업상생</a>
+            <ul class="depth02">
+              <li><a href="#">창업 가이드</a></li>
+              <li><a href="#">창업 상담</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">매장안내</a>
+            <ul class="depth02">
+              <li><a href="#">회사소개</a></li>
+              <li><a href="#">CEO의 말</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+<div class="login_wrap" >
+ <a class="join" href="#">회원가입</a>
+<a class="login" href="login.html">로그인</a>
+</div>
+    </aside>
+      <h1 class="logo"><a href="index.html"><img src="images/logo.png" alt="로고"></a></h1>
+      <button class="gps" type="button">위치
+      </button>
+      <span class="gnb_dimmed"></span>
+    </header>
+    <div id="container" class="login">
+      <div class="lnb">
+          <h2 class="login_tit">로그인</h2>
+        </div>
+      <div class="contents">
+              <div class="form_box">
+                    <div class="form_text input_id">
+                      <input id="username"  placeholder="아이디 입력" type="text" value="">
+                    </div>
+                    <div class="form_text input_password">
+                      <input id="password"placeholder="비밀번호 입력" type="password">
+                    </div>
+          <div class="checkbox_wrap">
+              <input id="rememberId" type="checkbox" class="agree_check">
+              <label for="rememberId" class="form_checkbox">아이디 저장</label>
+            </div>
+          </div>
+            <button type="button" class="btn_login">
+              <span>로그인</span>
+            </button>
+            <div class="login_link">
+              <ul>
+                <li><a href="#">회원가입</a></li>
+                <li><a href="#">아이디찾기</a></li>
+                <li><a href="#">비밀번호찾기</a></li>
+              </ul>
+            </div>
+      </div>
+    </div>
+    <footer id="footer">
+      <div class="link_wrap">          
+          <ul class="link1">
+            <li><a href="#">채용문의</a></li>
+            <li><a href="#">창업상담</a></li>
+            <li><a href="#">입점문의</a></li>
+            <li><a href="#">기업채용</a></li>
+          </ul>                      
+          <ul class="link2">
+            <li><a href="#">개인정보처리방침</a></li>
+            <li><a href="#">고객의소리</a></li>
+          </ul>            
+      </div>
+      <div class="info_banner">            
+        <div class="logo_wrap">
+        <div class="footer_logo">
+          <h2>logo</h2>
+        </div>
+      </div>
+        <div class="footer_address">
+          <p>서울특별시 중구 청계천로 100 시그니처타워 4층<br>TEL 1577-0711 FAX 02-2679-6860</p>                  
+    </div>
+    <p class="copyright">COPYRIGHT 2014 KOREA SEVEN CO, LTD. All Rights Reserved.</p>
+  </footer>
+  </div>
+</body>
+</html>
