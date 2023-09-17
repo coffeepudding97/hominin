@@ -1,6 +1,11 @@
+$(document).ready(function(){
+  $('.txt_wrap h2').addClass('on');
+});
+
 $(function () {
-   
-    
+
+
+    //페이지 넘기기
     var mHtml = $("html");
     var page = 1;
 
@@ -10,7 +15,7 @@ $(function () {
     $(window).on("wheel", function(e) {
     if(mHtml.is(":animated")) return;
     if(e.originalEvent.deltaY > 0) {
-        if(page == 4) return;
+        if(page == 5) return;
         page++;
     } else if(e.originalEvent.deltaY < 0) {
         if(page == 1) return;
@@ -25,4 +30,8 @@ $(function () {
     $('html, body').animate({scrollTop:$(this.hash).offset().top}, 500);
   })
 
+       
+  
 });
+
+
